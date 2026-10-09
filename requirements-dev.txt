@@ -1,0 +1,15 @@
+-r requirements.txt
+
+# Notebook / Data Science
+pandas
+matplotlib
+seaborn
+scikit-learn
+ipykernel
+
+# Testing
+pytest
+httpx
+
+# Code Quality
+flake8

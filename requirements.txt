@@ -1,0 +1,21 @@
+# Core ML / YOLOv8
+ultralytics
+opencv-python-headless
+numpy
+Pillow
+PyYAML
+
+# FastAPI inference service
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Flask web backend
+flask
+flask-cors
+gunicorn
+requests
+
+# AWS / Cloud
+boto3
+python-dotenv

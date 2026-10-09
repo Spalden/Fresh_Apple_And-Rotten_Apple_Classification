@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Fresh or Rotten?</h1>
+<p class="muted">Upload an apple photo and the model will tell you.</p>
+
+<form id="upload-form" class="card">
+  <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp" required>
+  <button type="submit" id="submit-btn">Detect</button>
+</form>
+
+<p id="status" class="muted"></p>
+
+<section id="result" class="card hidden">
+  <div class="canvas-wrap"><canvas id="canvas"></canvas></div>
+  <ul id="detections"></ul>
+</section>
+{% endblock %}

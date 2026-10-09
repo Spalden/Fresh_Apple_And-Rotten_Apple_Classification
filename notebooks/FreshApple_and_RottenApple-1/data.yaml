@@ -1,0 +1,15 @@
+names:
+- Fresh_Apple
+- Fresh_apple
+- RottenApple
+- rotten_apple
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: freshapple_and_rottenapple-23gh4
+  url: https://universe.roboflow.com/palden-sherpa/freshapple_and_rottenapple-23gh4/dataset/1
+  version: 1
+  workspace: palden-sherpa
+test: test\images
+train: train\images
+val: valid\images

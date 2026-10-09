@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir flask flask-cors gunicorn requests python-dotenv
+
+COPY webapp ./webapp
+COPY deployment/gunicorn.conf.py ./gunicorn.conf.py
+
+EXPOSE 5000
+CMD ["gunicorn", "-c", "gunicorn.conf.py", "webapp.app:app"]

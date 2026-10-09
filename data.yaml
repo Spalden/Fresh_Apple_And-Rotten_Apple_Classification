@@ -1,0 +1,11 @@
+path: data/processed
+
+train: train/images
+val: val/images
+test: test/images
+
+nc: 2
+
+names:
+  0: fresh_apple
+  1: rotten_apple

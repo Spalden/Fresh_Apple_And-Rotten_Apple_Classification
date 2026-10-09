@@ -1,0 +1,54 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.ipynb_checkpoints/
+
+data/raw/
+data/interim/
+data/processed/
+data/annotations/
+data/external/
+
+models/
+*.pt
+*.pth
+*.onnx
+
+artifacts/
+webapp/static/uploads/*
+!webapp/static/uploads/.gitkeep
+
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dataset
+data/
+datasets/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# YOLO training outputs
+runs/
+
+# Large model files
+*.pt
+
+# OS files
+.DS_Store
+Thumbs.db

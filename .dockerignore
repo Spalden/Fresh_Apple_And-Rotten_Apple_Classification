@@ -1,0 +1,13 @@
+.git
+.github
+__pycache__
+*.pyc
+.venv
+venv
+notebooks
+tests
+data
+artifacts
+.env
+.vscode
+.idea

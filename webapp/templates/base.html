@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Apple Detector{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="nav">
+    <a href="{{ url_for('pages.index') }}" class="brand">Apple Detector</a>
+    <nav>
+      <a href="{{ url_for('pages.index') }}">Detect</a>
+      <a href="{{ url_for('pages.about') }}">About</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
